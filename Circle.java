@@ -15,7 +15,7 @@ public class Circle
     private int yPosition;
     private String color;
     private boolean isVisible;
-    
+
     /**
      * Create a new circle at default position with default color.
      */
@@ -35,7 +35,7 @@ public class Circle
         isVisible = true;
         draw();
     }
-    
+
     /**
      * Make this circle invisible. If it was already invisible, do nothing.
      */
@@ -44,7 +44,7 @@ public class Circle
         erase();
         isVisible = false;
     }
-    
+
     /**
      * Move the circle a few pixels to the right.
      */
@@ -173,7 +173,7 @@ public class Circle
         if(isVisible) {
             Canvas canvas = Canvas.getCanvas();
             canvas.draw(this, color, new Ellipse2D.Double(xPosition, yPosition, 
-                                                          diameter, diameter));
+                    diameter, diameter));
             canvas.wait(10);
         }
     }
