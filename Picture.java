@@ -30,6 +30,14 @@ public class Picture
      */
     public void draw()
     {
+        campo = new Square();
+        campo.changeColor("green");
+        campo.changeSize(1000);
+        campo.makeVisible();
+        campo.moveVertical(120);
+        campo.moveHorizontal(-350);
+
+        
         wall = new Square();
         wall.moveHorizontal(-140);
         wall.moveVertical(20);
@@ -57,13 +65,7 @@ public class Picture
         sun.makeVisible();
         sun.slowMoveVertical(-90);
 
-        campo = new Square();
-        campo.changeColor("green");
-        campo.changeSize(1000);
-        campo.makeVisible();
-        campo.moveVertical(120);
-        campo.moveHorizontal(-350);
-
+      
     }
 
     /**
