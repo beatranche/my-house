@@ -68,6 +68,17 @@ public class Picture
       
     }
 
+    public void atardecer()
+    {
+    
+       
+           sun.makeVisible();
+           sun.slowMoveVertical(80);
+          
+       
+    }
+
+    
     /**
      * Change this picture to black/white display
      */
